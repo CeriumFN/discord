@@ -55,6 +55,10 @@ client.on('message', message =>{
         client.commands.get('playlist').execute(message, args);
     } else if (command == 'prop') {
         client.commands.get('prop').execute(message, args, Discord);
+    } else if (command == 'shop') {
+        client.commands.get('shop').execute(message, args, Discord);
+    } else {
+        message.channel.send("That is not a command.");
     }
 
 });
