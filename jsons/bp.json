@@ -1,5 +1,4 @@
-
-    {
+{
         "lars_name": "lars van",
         "lars_path": "/Game/Missions/Primary/LaunchTheBalloon/Props/BP_RtL_Main.BP_RtL_Main_C",
         "lars_despawns": false,
@@ -48,4 +47,4 @@
         "outlander_name": "outlander llama",
         "outlander_path": "/Game/Abilities/Player/Outlander/Actives/Fragment/Llama/Prop_Outlander_Fragment_Llama.Prop_Outlander_Fragment_Llama_C",
         "outlander_despawns": false
-    }
+}
