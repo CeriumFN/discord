@@ -24,6 +24,8 @@ app.listen(port, () => {
 
 // --- Discord bot code starts here ---
 client.commands = new Discord.Collection();
+
+// Defining all commands
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'))
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
@@ -41,12 +43,14 @@ client.once("ready", () => {
     client.user.setPresence({ activity: { type: "PLAYING", name: "Cerium"}, status: "dnd"})
 });
 
+// Message handling
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
  
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
+    // Command handler (very basic but easy *i'll make a good one i swear*)
     if(command == 'map') {
         client.commands.get('map').execute(message, args, Discord);
     } else if (command == 'aes') {

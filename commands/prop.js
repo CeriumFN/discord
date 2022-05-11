@@ -3,8 +3,12 @@ module.exports = {
     decription: "Gives path to props",
     execute(message, args, Discord) {
         const { MessageEmbed, MessageAttachment } = require('discord.js');
+        // Get all objects locally
         const blueprints = require('../jsons/bp.json');
+        // trims message to make handler
         const SayMessage = message.content.slice(5).trim();
+
+        // Prop handler
         if(SayMessage == "lars van")
         {
             const file = new MessageAttachment("./images/items/larsvan.jpg");
