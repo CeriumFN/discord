@@ -18,6 +18,7 @@ app.get('/larsvan', (req, res) => {
 })
   
 app.listen(port, () => {
+    console.log("epic pogger");
 })
 
 // --- Discord bot code starts here ---
