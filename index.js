@@ -1,3 +1,4 @@
+// Created by array0x (please check LICENSE for more information)
 const Discord = require('discord.js');
 const fs = require('fs');
 const path = require('path');
