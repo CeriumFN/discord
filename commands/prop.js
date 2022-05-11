@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'item',
-    decription: "Gives path to items",
+    name: 'prop',
+    decription: "Gives path to props",
     execute(message, args, Discord) {
         const { MessageEmbed, MessageAttachment } = require('discord.js');
         const blueprints = require('../jsons/bp.json');
