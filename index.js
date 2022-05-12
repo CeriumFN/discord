@@ -57,8 +57,8 @@ client.on('message', message =>{
         client.commands.get('aes').execute(message, args);
     } else if (command == 'playlist') {
         client.commands.get('playlist').execute(message, args);
-    } else if (command == 'item') {
-        client.commands.get('item').execute(message, args, Discord);
+    } else if (command == 'object') {
+        client.commands.get('object').execute(message, args, Discord);
     } else if (command == 'shop') {
         client.commands.get('shop').execute(message, args, Discord);
     } else {
